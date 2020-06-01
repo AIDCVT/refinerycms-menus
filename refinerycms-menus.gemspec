@@ -20,11 +20,11 @@ Gem::Specification.new do |s|
   s.test_files        = Dir["spec/**/*"] + ["Guardfile"]
 
   # Runtime dependencies
-  s.add_dependency    'refinerycms-core',    '>= 3.0.0'
-  s.add_dependency    'awesome_nested_set', '~> 3.0.0'
+  s.add_dependency    'refinerycms-core',    '>= 4.1.0'
+  s.add_dependency    'awesome_nested_set', '~> 3.2.0'
 
   # Development dependencies (usually used for testing)
-  s.add_development_dependency 'refinerycms-testing', '~> 2.0.6'
+  s.add_development_dependency 'refinerycms-testing', '~> 4.1.0'
 
 
 end
