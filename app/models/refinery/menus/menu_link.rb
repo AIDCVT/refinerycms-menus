@@ -3,8 +3,8 @@ module Refinery
     class MenuLink < Refinery::Core::BaseModel
       self.table_name = "refinery_menus_links"
       
-      attr_accessible :parent_id, :refinery_page_id, :refinery_menu_id, :resource, :resource_id, :resource_type,
-                      :title_attribute, :custom_url, :label, :menu, :id_attribute, :class_attribute
+      # attr_accessible :parent_id, :refinery_page_id, :refinery_menu_id, :resource, :resource_id, :resource_type,
+      #                 :title_attribute, :custom_url, :label, :menu, :id_attribute, :class_attribute
 
       belongs_to :menu, :class_name => '::Refinery::Menus::Menu', :foreign_key => :refinery_menu_id
       belongs_to :resource, :polymorphic => true

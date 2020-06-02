@@ -9,7 +9,7 @@ module Refinery
       validates :permatitle, :presence => true, :uniqueness => true
       validates_associated :links
       
-      attr_accessible :title, :permatitle, :links, :links_attributes
+      # attr_accessible :title, :permatitle, :links, :links_attributes
 
       accepts_nested_attributes_for :links, :allow_destroy => true
 
