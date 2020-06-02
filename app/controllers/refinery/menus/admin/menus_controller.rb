@@ -8,8 +8,8 @@ module Refinery
                 :include => [:links],
                 :redirect_to_url => "refinery.menus_admin_menus_path"
         
-        before_filter :find_menu_links, only: [:edit, :update]
-        before_filter :set_links_positions, only: [:create, :update]
+        before_action :find_menu_links, only: [:edit, :update]
+        before_action :set_links_positions, only: [:create, :update]
         
         private
 
